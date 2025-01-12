@@ -4,14 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Świat Według Kiepskich Toasty</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
       <h1>Świat Według Kiepskich - toasty do picia</h1>
+      <button onclick="pijemy()">Pijemy</button><br />
+      <button onclick="pauza()">Pauza</button><br />
+      <input
+        type="range"
+        id="volumeSlider"
+        class="volume-slider"
+        min="0"
+        max="1"
+        step="0.1"
+        value="1"
+      />
+      <p>Liczba kolejek: <span id="shots">0</span></p>
     </header>
     <section>
-      <button onclick="pijemy()">Pijemy</button>
-      <button onclick="pauza()">Pauza</button>
+      <p></p>
     </section>
     <script src="js/script.js"></script>
   </body>
